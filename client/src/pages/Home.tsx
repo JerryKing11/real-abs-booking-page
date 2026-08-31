@@ -183,7 +183,7 @@ export default function Home() {
               <div className="booking-embed" role="region" aria-label="Calendly scheduling">
                 <div className="booking-embed__topline">
                   <span>CALENDLY / LIVE BOOKING</span>
-                  <span>30 MIN EVENT</span>
+                  <span>15 MIN</span>
                 </div>
                   <div className="booking-embed__body">
                   <div className="booking-embed__mark"><BrandMark /></div>
