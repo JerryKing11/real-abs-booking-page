@@ -5,10 +5,8 @@
 import {
   ArrowDownRight,
   ArrowUpRight,
-  CalendarDays,
   Check,
   CircleDot,
-  Mail,
 } from "lucide-react";
 
 const workflowStages = [
@@ -35,9 +33,9 @@ const workflowStages = [
 function BrandMark() {
   return (
     <span className="brand-mark" aria-hidden="true">
-      <span className="brand-mark__stem" />
-      <span className="brand-mark__slash brand-mark__slash--left" />
-      <span className="brand-mark__slash brand-mark__slash--right" />
+      <span className="brand-mark__orbit brand-mark__orbit--one" />
+      <span className="brand-mark__orbit brand-mark__orbit--two" />
+      <span className="brand-mark__core" />
     </span>
   );
 }
@@ -46,9 +44,9 @@ export default function Home() {
   return (
     <main className="site-shell">
       <header className="site-header container" aria-label="Primary navigation">
-        <a className="wordmark" href="#top" aria-label="AI & Systems Architecture home">
+        <a className="wordmark" href="#top" aria-label="Automated Business Solutions home">
           <BrandMark />
-          <span>AI &amp; Systems Architecture</span>
+          <span>Automated Business Solutions</span>
         </a>
         <a className="button button--dark button--header" href="#booking">
           Book Pre-Audit Call
@@ -84,10 +82,6 @@ export default function Home() {
               <span>
                 <CircleDot size={13} strokeWidth={1.7} aria-hidden="true" />
                 For ambitious business owners
-              </span>
-              <span>
-                <CalendarDays size={13} strokeWidth={1.7} aria-hidden="true" />
-                28 min · Remote
               </span>
             </div>
           </div>
@@ -184,25 +178,25 @@ export default function Home() {
                 <p>
                   Start with a short pre-audit call. We will understand the shape of your operation, confirm fit, and set up the deeper audit around the work that matters most.
                 </p>
-                <div className="booking-card__facts">
-                  <span>01 / 28 minutes</span>
-                  <span>02 / Remote</span>
-                  <span>03 / No prep required</span>
-                </div>
               </div>
 
-              <div className="booking-embed" role="region" aria-label="Scheduling tool placeholder">
+              <div className="booking-embed" role="region" aria-label="Calendly scheduling">
                 <div className="booking-embed__topline">
-                  <span>CAL.COM / CALENDLY</span>
-                  <span>EMBED READY</span>
+                  <span>CALENDLY / LIVE BOOKING</span>
+                  <span>30 MIN EVENT</span>
                 </div>
-                <div className="booking-embed__body">
+                  <div className="booking-embed__body">
                   <div className="booking-embed__mark"><BrandMark /></div>
-                  <strong>Your scheduling link goes here.</strong>
-                  <p>Replace this frame with your Calendly or Cal.com embed to start taking bookings.</p>
-                  <a className="button button--light" href="mailto:hello@aisystemsarchitecture.com?subject=AI%20Automation%20Audit">
-                    Request a time
-                    <Mail size={16} strokeWidth={1.8} aria-hidden="true" />
+                  <strong>Choose a time that works for you.</strong>
+                  <p>Schedule your pre-audit call directly through Calendly.</p>
+                  <div
+                    className="calendly-inline-widget"
+                    data-url="https://calendly.com/jerryolamoyegun1/30min?hide_gdpr_banner=1"
+                    aria-label="Book an AI Automation Audit pre-audit call"
+                  />
+                  <a className="button button--light" href="https://calendly.com/jerryolamoyegun1/30min" target="_blank" rel="noreferrer">
+                    Open in Calendly
+                    <ArrowUpRight size={16} strokeWidth={1.8} aria-hidden="true" />
                   </a>
                 </div>
               </div>
@@ -215,10 +209,10 @@ export default function Home() {
         <div className="container site-footer__inner">
           <a className="wordmark wordmark--footer" href="#top">
             <BrandMark />
-            <span>AI &amp; Systems Architecture</span>
+            <span>Automated Business Solutions</span>
           </a>
-          <p>© 2026 AI &amp; Systems Architecture. Built for the next version of your operation.</p>
-          <a className="footer-email" href="mailto:hello@aisystemsarchitecture.com">hello@aisystemsarchitecture.com</a>
+          <p>© 2026 Automated Business Solutions. Built for the next version of your operation.</p>
+          <a className="footer-email" href="mailto:jerryolamoyegun1@gmail.com">jerryolamoyegun1@gmail.com</a>
         </div>
       </footer>
     </main>

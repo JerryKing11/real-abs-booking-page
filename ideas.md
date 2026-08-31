@@ -1,4 +1,4 @@
-# AI & Systems Architecture — Design Direction
+# Automated Business Solutions — Design Direction
 
 ## Approach 1
 
