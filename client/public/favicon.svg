@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Automated Business Solutions mark">
+  <rect width="64" height="64" fill="#0A0A0A"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="miter">
+    <path d="M16 20h19l13 13-13 13H16l-8-8 8-8h19"/>
+    <path d="M48 44H29L16 31l13-13h19l8 8-8 8H29" opacity=".58"/>
+  </g>
+  <rect x="27" y="27" width="10" height="10" fill="#FFFFFF"/>
+</svg>
